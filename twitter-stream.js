@@ -20,7 +20,7 @@ producer.on('error', function (err) {
 producer.on('ready', function() {
     console.log('Kafka Producer is ready');
 
-    var stream = T.stream('statuses/filter', { track: '#MuslimsAreNotTerrorist' });
+    var stream = T.stream('statuses/filter', { track: '#TümİçtenliğimleSöylüyorum' });
     stream.on('tweet', function (tweet) {
         var payloads = [
             {

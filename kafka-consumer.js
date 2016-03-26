@@ -3,8 +3,7 @@ var kafka = require('kafka-node'),
     HighLevelConsumer = kafka.HighLevelConsumer,
     Client = kafka.Client;
 
-    var hrTime = process.hrtime();
-    kafkaGroup = 'twitter_' + (hrTime[0] * 1000000 + hrTime[1] / 1000);
+    kafkaGroup = 'twitter';
     client = new Client(process.env.ZOOKEEPER_URL, kafkaGroup);
 
     var consumer = new HighLevelConsumer(
