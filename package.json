@@ -1,0 +1,26 @@
+{
+  "name": "twitter-stream",
+  "version": "1.0.0",
+  "description": "Twitter stream and real time notification backed by Apache Kafka",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huseyinbabal/twitter-stream.git"
+  },
+  "keywords": [
+    "kafka",
+    "twitter"
+  ],
+  "author": "Huseyin BABAL <huseyinbabal88@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "kafka-node": "^0.3.2",
+    "socket.io": "^1.4.5",
+    "socket.io-emitter": "^1.0.0",
+    "socket.io-redis": "^1.0.0"
+  }
+}
