@@ -20,7 +20,7 @@ producer.on('error', function (err) {
 producer.on('ready', function() {
     console.log('Kafka Producer is ready');
 
-    var stream = T.stream('statuses/filter', { track: '#TümİçtenliğimleSöylüyorum' });
+    var stream = T.stream('statuses/filter', { track: process.env.TWITTER_HASH_TAG });
     stream.on('tweet', function (tweet) {
         var payloads = [
             {

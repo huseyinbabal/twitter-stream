@@ -1,5 +1,5 @@
 var kafka = require('kafka-node'),
-    io = require('socket.io-emitter')({ host: 'localhost', port: 6379 }),
+    io = require('socket.io-emitter')({ host: process.env.REDIS_HOST, port: process.env.REDIS_PORT }),
     HighLevelConsumer = kafka.HighLevelConsumer,
     Client = kafka.Client;
 
